@@ -1,45 +1,14 @@
-// Create a program to perform a selection sort on integer values. You may choose to use either 
-// C/C++ or Java, but your code must run on a lab computer. (Keep in mind you may want to use 
-// this code in assignment one). You may implement your selection sort using either an array or a 
-// linked list. Use the initial data 2,4,6,0,1 to demonstrate your code.
-// Also write a function / method that generates an array or linked list of random data. As 
-// a parameter this method takes the size of the array/linked list to create. Generate random 
-// values between zero and twice the length of the array/linked list. For example, an array of size 
-// ten would be filled with values between 0 and 20. Use this method to create an array/linked 
-// list of size ten and sort it. An example is shown below.
-// Original Array: 2, 4, 6, 0, 1
-//  After pass 1: 0, 4, 6, 2, 1
-//  After pass 2: 0, 1, 6, 2, 4
-//  After pass 3: 0, 1, 2, 6, 4
-//  After pass 4: 0, 1, 2, 4, 6
-// Sorted array: 0, 1, 2, 4, 6
-// Original Array: 9, 6, 15, 16, 4, 16, 4, 11, 11, 5
-//  After pass 1: 4, 6, 15, 16, 9, 16, 4, 11, 11, 5
-//  After pass 2: 4, 4, 15, 16, 9, 16, 6, 11, 11, 5
-//  After pass 3: 4, 4, 5, 16, 9, 16, 6, 11, 11, 15
-//  After pass 4: 4, 4, 5, 6, 9, 16, 16, 11, 11, 15
-//  After pass 5: 4, 4, 5, 6, 9, 16, 16, 11, 11, 15
-//  After pass 6: 4, 4, 5, 6, 9, 11, 16, 16, 11, 15
-//  After pass 7: 4, 4, 5, 6, 9, 11, 11, 16, 16, 15
-//  After pass 8: 4, 4, 5, 6, 9, 11, 11, 15, 16, 16
-//  After pass 9: 4, 4, 5, 6, 9, 11, 11, 15, 16, 16
-// Sorted array: 4, 4, 5, 6, 9, 11, 11, 15, 16, 16
-// Appropriately comment your code. When you have completed your program demonstrate it to 
-// the instructor and upload your source code to Moodle
-
 // Author: Nicholas Almeida
 
 public class Demo1 {
     // Main method
     public static void main(String[] args) {
-        // create basic request array
+        // Test against first example array
         int[] arr = {2, 4, 6, 0, 1};
-        // print original array
         System.out.println("Original Array: " + printArray(arr));
-        // call selection sort method
         selectionSort(arr);
 
-        // set array to second request and retest
+        // Test against second example array
         arr = new int[]{9, 6, 15, 16, 4, 16, 4, 11, 11, 5};
         System.out.println("Original Array: " + printArray(arr));
         selectionSort(arr);
@@ -47,12 +16,12 @@ public class Demo1 {
         //create a new array based on a given size
         int[] arr2 = generateArray(10);
         System.out.println("Original Array: " + printArray(arr2));
+        selectionSort(arr2);
 
     }
 
     // method to print an array
     public static String printArray(int[] arr) {
-        // create string to return
         String ret = "";
         // loop through array and add each element to string, except last
         for (int i = 0; i < arr.length - 1; i++) {
@@ -70,17 +39,14 @@ public class Demo1 {
     public static void selectionSort(int[] arr) {
         // confirm the array is not empty 
         if (arr.length == 0) {
-            // print error message
             System.out.println("Array is empty");
-            // exit method
+
             return;
         }
 
         // if there is only one element in the array, it is already sorted
         if (arr.length == 1) {
-            // print array
             System.out.println("Sorted array: " + printArray(arr));
-            // exit method
             return;
         }
 
@@ -110,7 +76,6 @@ public class Demo1 {
             // print array
             System.out.println("After pass " + (i + 1) + ": " + printArray(arr));
         }
-
 
         // print sorted array
         System.out.println("Sorted array: " + printArray(arr));
