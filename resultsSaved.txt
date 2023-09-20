@@ -1,0 +1,50 @@
+Assignment 1 Experiment Results
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort: 14 milliseconds
+Bubble Sort: 44 milliseconds
+Insertion Sort: 4 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 1 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort: 10 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 21 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort: 28 milliseconds
+Bubble Sort: 50 milliseconds
+Insertion Sort: 6 milliseconds
+Quick Sort: 19 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort: 683 milliseconds
+Bubble Sort: 10108 milliseconds
+Insertion Sort: 341 milliseconds
+Quick Sort: 4 milliseconds
+Merge Sort: 9 milliseconds
+Heap Sort: 7 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort: 671 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2091 milliseconds
+Merge Sort: 4 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort: 4753 milliseconds
+Bubble Sort: 5071 milliseconds
+Insertion Sort: 686 milliseconds
+Quick Sort: 1854 milliseconds
+Merge Sort: 4 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
