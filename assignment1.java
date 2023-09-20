@@ -16,13 +16,53 @@
 //Imports
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class assignment1 {
 
-
+    // Test:
+    // 10000 random numbers
+    // 10000 sorted numbers
+    // 10000 reverse sorted numbers
+    // 100000 random numbers
+    // 100000 sorted numbers
+    // 100000 reverse sorted numbers
+    // 1000000 random numbers
+    // 1000000 sorted numbers
+    // 1000000 reverse sorted numbers
+    // 5 tests of each
     public static void main(String[] args) {
-        //create a file to write to
+        
+        // create a file
+        File file = new File("results.txt");
+        // create a print writer
+        try{
+            FileWriter writer = new FileWriter("results.txt");
+            // Write a header
+            writer.write("Assignment 1 Experiment Results\n");
+            // create a line to break the data up
+            writer.write("______________________________________________________________________________\n");
+            // 10000 random numbers experiment (5 runs)
+            for (int i = 0; i < 5; i++){
+                
+            }
+
+
+
+            writer.close();
+        }
+        catch (IOException e){
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        //Close file 
+        
+        
+
+
+
 
         
 
