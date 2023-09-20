@@ -1,6 +1,6 @@
 // Author: Nicholas Almeida
 
-public class Demo1 {
+public class demo1 {
     // Main method
     public static void main(String[] args) {
         // Test against first example array
