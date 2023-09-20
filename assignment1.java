@@ -8,21 +8,71 @@
 // same data
 
 //TO DO
-// DOUBLE CHECK MERGE SORT
-// implement heap sort
+// understand heap sort better
 // make main method. It needs to right results to a file.
 // if possible, make a graph of the results 
 
+
+//Imports
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 public class assignment1 {
+
+
     public static void main(String[] args) {
-        // test against a five element array generated
-        int[] arr = generateArray(5);
-        System.out.println("Initial Array (Random 5): " + printArray(arr));
-        int[] mergeSorted = mergeSort(arr);
-        System.out.println("Merge Sorted Array (Random 5): " + printArray(mergeSorted));
+        //create a file to write to
+
+        
 
 
     }
+    
+    //heap sort method
+    public static int[] heapSort(int[] arr){
+        // build heap
+        for (int i = arr.length / 2 - 1; i >= 0; i--) {
+            heapify(arr, arr.length, i);
+        }
+        // extract elements from heap
+        for (int i = arr.length - 1; i >= 0; i--) {
+            // move current root to end
+            swap(arr, 0, i);
+            // call max heapify on the reduced heap
+            heapify(arr, i, 0);
+        }
+        return arr;
+    }
+
+    // heapify method (heap sort)
+    // This method builds a max heap
+    public static void heapify(int[] arr, int n, int i){
+        // set largest to root
+        int largest = i;
+        // set left to left child
+        int left = 2 * i + 1;
+        // set right to right child
+        int right = 2 * i + 2;
+        // check if left child is larger than root
+        if(left < n && arr[left] > arr[largest]){
+            // set largest to left child
+            largest = left;
+        }
+        // check if right child is larger than root
+        if(right < n && arr[right] > arr[largest]){
+            // set largest to right child
+            largest = right;
+        }
+        // check if largest is not root
+        if(largest != i){
+            // swap root with largest
+            swap(arr, i, largest);
+            // recursively call heapify on the affected subtree
+            heapify(arr, n, largest);
+        }
+    }
+
     //merge sort method
     // This method splits the array in half and sorts each half recursively
     public static int[] mergeSort(int[] arr){
@@ -34,10 +84,15 @@ public class assignment1 {
         int[] left = new int[arr.length/2];
         int[] right = new int[arr.length - left.length];
         // copy left half of array into left
-        System.arraycopy(arr, 0, left, 0, left.length);
+        for (int i = 0; i < left.length; i++) {
+            left[i] = arr[i];
+        }
         // copy right half of array into right
-        System.arraycopy(arr, left.length, right, 0, right.length);
+        for (int i = 0; i < right.length; i++) {
+            right[i] = arr[left.length + i];
+        }
         // recursively call mergeSort on left and right
+        // We don't need to store the return value because the array is passed by reference
         mergeSort(left);
         mergeSort(right);
         // merge left and right
