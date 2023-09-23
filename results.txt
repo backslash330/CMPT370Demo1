@@ -1,0 +1,1182 @@
+Assignment 1 Experiment Results
+______________________________________________________________________________
+Test Set 1:
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort Size 10000 random: 18 milliseconds
+Bubble Sort Size 10000 random: 38 milliseconds
+Insertion Sort Size 10000 random: 6 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 2 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 17 milliseconds
+Bubble Sort Size 10000 random: 36 milliseconds
+Insertion Sort Size 10000 random: 6 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 17 milliseconds
+Bubble Sort Size 10000 random: 36 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 17 milliseconds
+Bubble Sort Size 10000 random: 36 milliseconds
+Insertion Sort Size 10000 random: 2 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 0 milliseconds
+Heap Sort Size 10000 random: 2 milliseconds
+Average Times:
+Selection Sort: 15 milliseconds
+Bubble Sort: 43 milliseconds
+Insertion Sort: 4 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 1 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort Size 10000 sorted: 16 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 17 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 20 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Average Times:
+Selection Sort: 10 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 20 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 1 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort Size 10000 reverse sorted: 27 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 7 milliseconds
+Quick Sort Size 10000 reverse sorted: 17 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 27 milliseconds
+Bubble Sort Size 10000 reverse sorted: 49 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 17 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 30 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 29 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 29 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Average Times:
+Selection Sort: 28 milliseconds
+Bubble Sort: 50 milliseconds
+Insertion Sort: 6 milliseconds
+Quick Sort: 17 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort Size 100000 random: 681 milliseconds
+Bubble Sort Size 100000 random: 10441 milliseconds
+Insertion Sort Size 100000 random: 336 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 10 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 683 milliseconds
+Bubble Sort Size 100000 random: 10774 milliseconds
+Insertion Sort Size 100000 random: 396 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 11 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 722 milliseconds
+Bubble Sort Size 100000 random: 10023 milliseconds
+Insertion Sort Size 100000 random: 343 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 711 milliseconds
+Bubble Sort Size 100000 random: 10062 milliseconds
+Insertion Sort Size 100000 random: 362 milliseconds
+Quick Sort Size 100000 random: 4 milliseconds
+Merge Sort Size 100000 random: 10 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 717 milliseconds
+Bubble Sort Size 100000 random: 10090 milliseconds
+Insertion Sort Size 100000 random: 381 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Average Times:
+Selection Sort: 702 milliseconds
+Bubble Sort: 10278 milliseconds
+Insertion Sort: 363 milliseconds
+Quick Sort: 5 milliseconds
+Merge Sort: 9 milliseconds
+Heap Sort: 7 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort Size 100000 sorted: 716 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2296 milliseconds
+Merge Sort Size 100000 sorted: 4 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Selection Sort Size 100000 sorted: 690 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2227 milliseconds
+Merge Sort Size 100000 sorted: 4 milliseconds
+Heap Sort Size 100000 sorted: 3 milliseconds
+Selection Sort Size 100000 sorted: 745 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2219 milliseconds
+Merge Sort Size 100000 sorted: 6 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 720 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 1 milliseconds
+Quick Sort Size 100000 sorted: 2212 milliseconds
+Merge Sort Size 100000 sorted: 8 milliseconds
+Heap Sort Size 100000 sorted: 6 milliseconds
+Selection Sort Size 100000 sorted: 673 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2143 milliseconds
+Merge Sort Size 100000 sorted: 4 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Average Times:
+Selection Sort: 708 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2219 milliseconds
+Merge Sort: 5 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort Size 100000 reverse sorted: 4726 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4573 milliseconds
+Insertion Sort Size 100000 reverse sorted: 741 milliseconds
+Quick Sort Size 100000 reverse sorted: 1981 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4791 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4653 milliseconds
+Insertion Sort Size 100000 reverse sorted: 713 milliseconds
+Quick Sort Size 100000 reverse sorted: 1964 milliseconds
+Merge Sort Size 100000 reverse sorted: 5 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4849 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4819 milliseconds
+Insertion Sort Size 100000 reverse sorted: 701 milliseconds
+Quick Sort Size 100000 reverse sorted: 1830 milliseconds
+Merge Sort Size 100000 reverse sorted: 5 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4873 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4681 milliseconds
+Insertion Sort Size 100000 reverse sorted: 723 milliseconds
+Quick Sort Size 100000 reverse sorted: 1991 milliseconds
+Merge Sort Size 100000 reverse sorted: 5 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4864 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4663 milliseconds
+Insertion Sort Size 100000 reverse sorted: 924 milliseconds
+Quick Sort Size 100000 reverse sorted: 2709 milliseconds
+Merge Sort Size 100000 reverse sorted: 7 milliseconds
+Heap Sort Size 100000 reverse sorted: 6 milliseconds
+Average Times:
+Selection Sort: 4820 milliseconds
+Bubble Sort: 4677 milliseconds
+Insertion Sort: 760 milliseconds
+Quick Sort: 2095 milliseconds
+Merge Sort: 5 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+Test Set 2:
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 84 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 79 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 0 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 11 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 4 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 71 milliseconds
+Insertion Sort Size 10000 random: 5 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 6 milliseconds
+Bubble Sort Size 10000 random: 69 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Average Times:
+Selection Sort: 8 milliseconds
+Bubble Sort: 75 milliseconds
+Insertion Sort: 3 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 28 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 10 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 28 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 8 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 24 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 26 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Average Times:
+Selection Sort: 7 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 25 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort Size 10000 reverse sorted: 29 milliseconds
+Bubble Sort Size 10000 reverse sorted: 37 milliseconds
+Insertion Sort Size 10000 reverse sorted: 7 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 30 milliseconds
+Bubble Sort Size 10000 reverse sorted: 40 milliseconds
+Insertion Sort Size 10000 reverse sorted: 12 milliseconds
+Quick Sort Size 10000 reverse sorted: 26 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 32 milliseconds
+Bubble Sort Size 10000 reverse sorted: 48 milliseconds
+Insertion Sort Size 10000 reverse sorted: 10 milliseconds
+Quick Sort Size 10000 reverse sorted: 29 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 33 milliseconds
+Bubble Sort Size 10000 reverse sorted: 34 milliseconds
+Insertion Sort Size 10000 reverse sorted: 7 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 30 milliseconds
+Bubble Sort Size 10000 reverse sorted: 45 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Average Times:
+Selection Sort: 30 milliseconds
+Bubble Sort: 40 milliseconds
+Insertion Sort: 8 milliseconds
+Quick Sort: 22 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort Size 100000 random: 765 milliseconds
+Bubble Sort Size 100000 random: 10237 milliseconds
+Insertion Sort Size 100000 random: 370 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 11 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 772 milliseconds
+Bubble Sort Size 100000 random: 10406 milliseconds
+Insertion Sort Size 100000 random: 601 milliseconds
+Quick Sort Size 100000 random: 4 milliseconds
+Merge Sort Size 100000 random: 11 milliseconds
+Heap Sort Size 100000 random: 9 milliseconds
+Selection Sort Size 100000 random: 775 milliseconds
+Bubble Sort Size 100000 random: 10270 milliseconds
+Insertion Sort Size 100000 random: 364 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 9 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 711 milliseconds
+Bubble Sort Size 100000 random: 10155 milliseconds
+Insertion Sort Size 100000 random: 374 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 14 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 790 milliseconds
+Bubble Sort Size 100000 random: 10226 milliseconds
+Insertion Sort Size 100000 random: 418 milliseconds
+Quick Sort Size 100000 random: 7 milliseconds
+Merge Sort Size 100000 random: 12 milliseconds
+Heap Sort Size 100000 random: 11 milliseconds
+Average Times:
+Selection Sort: 762 milliseconds
+Bubble Sort: 10258 milliseconds
+Insertion Sort: 425 milliseconds
+Quick Sort: 5 milliseconds
+Merge Sort: 11 milliseconds
+Heap Sort: 8 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort Size 100000 sorted: 737 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2347 milliseconds
+Merge Sort Size 100000 sorted: 4 milliseconds
+Heap Sort Size 100000 sorted: 6 milliseconds
+Selection Sort Size 100000 sorted: 714 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2297 milliseconds
+Merge Sort Size 100000 sorted: 5 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Selection Sort Size 100000 sorted: 810 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 1 milliseconds
+Quick Sort Size 100000 sorted: 2332 milliseconds
+Merge Sort Size 100000 sorted: 6 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 722 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 1 milliseconds
+Quick Sort Size 100000 sorted: 2227 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 7 milliseconds
+Selection Sort Size 100000 sorted: 714 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2211 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Average Times:
+Selection Sort: 739 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2282 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 5 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort Size 100000 reverse sorted: 4846 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4650 milliseconds
+Insertion Sort Size 100000 reverse sorted: 732 milliseconds
+Quick Sort Size 100000 reverse sorted: 2079 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4855 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4503 milliseconds
+Insertion Sort Size 100000 reverse sorted: 728 milliseconds
+Quick Sort Size 100000 reverse sorted: 2041 milliseconds
+Merge Sort Size 100000 reverse sorted: 5 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4767 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4567 milliseconds
+Insertion Sort Size 100000 reverse sorted: 687 milliseconds
+Quick Sort Size 100000 reverse sorted: 1985 milliseconds
+Merge Sort Size 100000 reverse sorted: 4 milliseconds
+Heap Sort Size 100000 reverse sorted: 7 milliseconds
+Selection Sort Size 100000 reverse sorted: 4824 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4797 milliseconds
+Insertion Sort Size 100000 reverse sorted: 823 milliseconds
+Quick Sort Size 100000 reverse sorted: 2116 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4767 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4606 milliseconds
+Insertion Sort Size 100000 reverse sorted: 765 milliseconds
+Quick Sort Size 100000 reverse sorted: 1921 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Average Times:
+Selection Sort: 4811 milliseconds
+Bubble Sort: 4624 milliseconds
+Insertion Sort: 747 milliseconds
+Quick Sort: 2028 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+Test Set 3:
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 69 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 69 milliseconds
+Insertion Sort Size 10000 random: 2 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 71 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 68 milliseconds
+Insertion Sort Size 10000 random: 4 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Average Times:
+Selection Sort: 7 milliseconds
+Bubble Sort: 70 milliseconds
+Insertion Sort: 3 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 1 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 22 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 20 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Average Times:
+Selection Sort: 6 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 21 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 43 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 27 milliseconds
+Bubble Sort Size 10000 reverse sorted: 45 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 20 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 2 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 12 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Average Times:
+Selection Sort: 27 milliseconds
+Bubble Sort: 47 milliseconds
+Insertion Sort: 7 milliseconds
+Quick Sort: 18 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort Size 100000 random: 704 milliseconds
+Bubble Sort Size 100000 random: 9969 milliseconds
+Insertion Sort Size 100000 random: 355 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 715 milliseconds
+Bubble Sort Size 100000 random: 10094 milliseconds
+Insertion Sort Size 100000 random: 343 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 739 milliseconds
+Bubble Sort Size 100000 random: 9926 milliseconds
+Insertion Sort Size 100000 random: 354 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 7 milliseconds
+Heap Sort Size 100000 random: 11 milliseconds
+Selection Sort Size 100000 random: 688 milliseconds
+Bubble Sort Size 100000 random: 9953 milliseconds
+Insertion Sort Size 100000 random: 428 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 701 milliseconds
+Bubble Sort Size 100000 random: 10037 milliseconds
+Insertion Sort Size 100000 random: 357 milliseconds
+Quick Sort Size 100000 random: 6 milliseconds
+Merge Sort Size 100000 random: 7 milliseconds
+Heap Sort Size 100000 random: 9 milliseconds
+Average Times:
+Selection Sort: 709 milliseconds
+Bubble Sort: 9995 milliseconds
+Insertion Sort: 367 milliseconds
+Quick Sort: 5 milliseconds
+Merge Sort: 7 milliseconds
+Heap Sort: 8 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort Size 100000 sorted: 716 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2273 milliseconds
+Merge Sort Size 100000 sorted: 5 milliseconds
+Heap Sort Size 100000 sorted: 6 milliseconds
+Selection Sort Size 100000 sorted: 670 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2243 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Selection Sort Size 100000 sorted: 763 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2289 milliseconds
+Merge Sort Size 100000 sorted: 3 milliseconds
+Heap Sort Size 100000 sorted: 6 milliseconds
+Selection Sort Size 100000 sorted: 693 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2255 milliseconds
+Merge Sort Size 100000 sorted: 5 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 722 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2261 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Average Times:
+Selection Sort: 712 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2264 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 5 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort Size 100000 reverse sorted: 4818 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4665 milliseconds
+Insertion Sort Size 100000 reverse sorted: 706 milliseconds
+Quick Sort Size 100000 reverse sorted: 1907 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4779 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4441 milliseconds
+Insertion Sort Size 100000 reverse sorted: 789 milliseconds
+Quick Sort Size 100000 reverse sorted: 2083 milliseconds
+Merge Sort Size 100000 reverse sorted: 5 milliseconds
+Heap Sort Size 100000 reverse sorted: 7 milliseconds
+Selection Sort Size 100000 reverse sorted: 4829 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4380 milliseconds
+Insertion Sort Size 100000 reverse sorted: 706 milliseconds
+Quick Sort Size 100000 reverse sorted: 1870 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4758 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4789 milliseconds
+Insertion Sort Size 100000 reverse sorted: 706 milliseconds
+Quick Sort Size 100000 reverse sorted: 1960 milliseconds
+Merge Sort Size 100000 reverse sorted: 6 milliseconds
+Heap Sort Size 100000 reverse sorted: 6 milliseconds
+Selection Sort Size 100000 reverse sorted: 4830 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4633 milliseconds
+Insertion Sort Size 100000 reverse sorted: 731 milliseconds
+Quick Sort Size 100000 reverse sorted: 2050 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Average Times:
+Selection Sort: 4802 milliseconds
+Bubble Sort: 4581 milliseconds
+Insertion Sort: 727 milliseconds
+Quick Sort: 1974 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 5 milliseconds
+______________________________________________________________________________
+Test Set 4:
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 65 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 14 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 76 milliseconds
+Insertion Sort Size 10000 random: 4 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 80 milliseconds
+Insertion Sort Size 10000 random: 2 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Average Times:
+Selection Sort: 8 milliseconds
+Bubble Sort: 73 milliseconds
+Insertion Sort: 3 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 1 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort Size 10000 sorted: 8 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 23 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 26 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 25 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 28 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Average Times:
+Selection Sort: 7 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 24 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort Size 10000 reverse sorted: 31 milliseconds
+Bubble Sort Size 10000 reverse sorted: 49 milliseconds
+Insertion Sort Size 10000 reverse sorted: 8 milliseconds
+Quick Sort Size 10000 reverse sorted: 21 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 8 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 30 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 31 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Average Times:
+Selection Sort: 29 milliseconds
+Bubble Sort: 50 milliseconds
+Insertion Sort: 6 milliseconds
+Quick Sort: 19 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort Size 100000 random: 702 milliseconds
+Bubble Sort Size 100000 random: 10192 milliseconds
+Insertion Sort Size 100000 random: 364 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 698 milliseconds
+Bubble Sort Size 100000 random: 10090 milliseconds
+Insertion Sort Size 100000 random: 353 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 10 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 707 milliseconds
+Bubble Sort Size 100000 random: 10066 milliseconds
+Insertion Sort Size 100000 random: 398 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 10 milliseconds
+Selection Sort Size 100000 random: 785 milliseconds
+Bubble Sort Size 100000 random: 10032 milliseconds
+Insertion Sort Size 100000 random: 350 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 773 milliseconds
+Bubble Sort Size 100000 random: 10135 milliseconds
+Insertion Sort Size 100000 random: 351 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Average Times:
+Selection Sort: 733 milliseconds
+Bubble Sort: 10103 milliseconds
+Insertion Sort: 363 milliseconds
+Quick Sort: 5 milliseconds
+Merge Sort: 8 milliseconds
+Heap Sort: 8 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort Size 100000 sorted: 718 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 1 milliseconds
+Quick Sort Size 100000 sorted: 2280 milliseconds
+Merge Sort Size 100000 sorted: 3 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 679 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2351 milliseconds
+Merge Sort Size 100000 sorted: 5 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Selection Sort Size 100000 sorted: 793 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2425 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 676 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2285 milliseconds
+Merge Sort Size 100000 sorted: 3 milliseconds
+Heap Sort Size 100000 sorted: 3 milliseconds
+Selection Sort Size 100000 sorted: 756 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2519 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Average Times:
+Selection Sort: 724 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2372 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort Size 100000 reverse sorted: 5039 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4581 milliseconds
+Insertion Sort Size 100000 reverse sorted: 753 milliseconds
+Quick Sort Size 100000 reverse sorted: 1926 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4805 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4224 milliseconds
+Insertion Sort Size 100000 reverse sorted: 768 milliseconds
+Quick Sort Size 100000 reverse sorted: 2049 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4832 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4444 milliseconds
+Insertion Sort Size 100000 reverse sorted: 740 milliseconds
+Quick Sort Size 100000 reverse sorted: 1923 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4798 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4476 milliseconds
+Insertion Sort Size 100000 reverse sorted: 799 milliseconds
+Quick Sort Size 100000 reverse sorted: 2037 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 6 milliseconds
+Selection Sort Size 100000 reverse sorted: 4929 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4974 milliseconds
+Insertion Sort Size 100000 reverse sorted: 681 milliseconds
+Quick Sort Size 100000 reverse sorted: 1841 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Average Times:
+Selection Sort: 4880 milliseconds
+Bubble Sort: 4539 milliseconds
+Insertion Sort: 748 milliseconds
+Quick Sort: 1955 milliseconds
+Merge Sort: 2 milliseconds
+Heap Sort: 5 milliseconds
+______________________________________________________________________________
+Test Set 5:
+______________________________________________________________________________
+10000 random numbers experiment:
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 68 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 69 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 7 milliseconds
+Bubble Sort Size 10000 random: 65 milliseconds
+Insertion Sort Size 10000 random: 2 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 73 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 1 milliseconds
+Merge Sort Size 10000 random: 0 milliseconds
+Heap Sort Size 10000 random: 1 milliseconds
+Selection Sort Size 10000 random: 8 milliseconds
+Bubble Sort Size 10000 random: 65 milliseconds
+Insertion Sort Size 10000 random: 3 milliseconds
+Quick Sort Size 10000 random: 0 milliseconds
+Merge Sort Size 10000 random: 1 milliseconds
+Heap Sort Size 10000 random: 0 milliseconds
+Average Times:
+Selection Sort: 7 milliseconds
+Bubble Sort: 68 milliseconds
+Insertion Sort: 2 milliseconds
+Quick Sort: 0 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 sorted numbers experiment:
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 7 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 20 milliseconds
+Merge Sort Size 10000 sorted: 1 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 22 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 1 milliseconds
+Selection Sort Size 10000 sorted: 6 milliseconds
+Bubble Sort Size 10000 sorted: 0 milliseconds
+Insertion Sort Size 10000 sorted: 0 milliseconds
+Quick Sort Size 10000 sorted: 21 milliseconds
+Merge Sort Size 10000 sorted: 0 milliseconds
+Heap Sort Size 10000 sorted: 0 milliseconds
+Average Times:
+Selection Sort: 6 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 21 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+10000 reverse sorted numbers experiment:
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 29 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 30 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 5 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Selection Sort Size 10000 reverse sorted: 28 milliseconds
+Bubble Sort Size 10000 reverse sorted: 51 milliseconds
+Insertion Sort Size 10000 reverse sorted: 6 milliseconds
+Quick Sort Size 10000 reverse sorted: 19 milliseconds
+Merge Sort Size 10000 reverse sorted: 0 milliseconds
+Heap Sort Size 10000 reverse sorted: 1 milliseconds
+Selection Sort Size 10000 reverse sorted: 29 milliseconds
+Bubble Sort Size 10000 reverse sorted: 50 milliseconds
+Insertion Sort Size 10000 reverse sorted: 8 milliseconds
+Quick Sort Size 10000 reverse sorted: 18 milliseconds
+Merge Sort Size 10000 reverse sorted: 1 milliseconds
+Heap Sort Size 10000 reverse sorted: 0 milliseconds
+Average Times:
+Selection Sort: 28 milliseconds
+Bubble Sort: 50 milliseconds
+Insertion Sort: 6 milliseconds
+Quick Sort: 18 milliseconds
+Merge Sort: 0 milliseconds
+Heap Sort: 0 milliseconds
+______________________________________________________________________________
+100000 random numbers experiment:
+Selection Sort Size 100000 random: 673 milliseconds
+Bubble Sort Size 100000 random: 9781 milliseconds
+Insertion Sort Size 100000 random: 356 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 9 milliseconds
+Heap Sort Size 100000 random: 8 milliseconds
+Selection Sort Size 100000 random: 705 milliseconds
+Bubble Sort Size 100000 random: 10219 milliseconds
+Insertion Sort Size 100000 random: 349 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 8 milliseconds
+Heap Sort Size 100000 random: 9 milliseconds
+Selection Sort Size 100000 random: 705 milliseconds
+Bubble Sort Size 100000 random: 10035 milliseconds
+Insertion Sort Size 100000 random: 345 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 9 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 687 milliseconds
+Bubble Sort Size 100000 random: 9786 milliseconds
+Insertion Sort Size 100000 random: 355 milliseconds
+Quick Sort Size 100000 random: 5 milliseconds
+Merge Sort Size 100000 random: 11 milliseconds
+Heap Sort Size 100000 random: 7 milliseconds
+Selection Sort Size 100000 random: 712 milliseconds
+Bubble Sort Size 100000 random: 10200 milliseconds
+Insertion Sort Size 100000 random: 673 milliseconds
+Quick Sort Size 100000 random: 7 milliseconds
+Merge Sort Size 100000 random: 11 milliseconds
+Heap Sort Size 100000 random: 11 milliseconds
+Average Times:
+Selection Sort: 696 milliseconds
+Bubble Sort: 10004 milliseconds
+Insertion Sort: 415 milliseconds
+Quick Sort: 5 milliseconds
+Merge Sort: 9 milliseconds
+Heap Sort: 8 milliseconds
+______________________________________________________________________________
+100000 sorted numbers experiment:
+Selection Sort Size 100000 sorted: 792 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2604 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 851 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 3150 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 6 milliseconds
+Selection Sort Size 100000 sorted: 775 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2214 milliseconds
+Merge Sort Size 100000 sorted: 3 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 697 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2530 milliseconds
+Merge Sort Size 100000 sorted: 3 milliseconds
+Heap Sort Size 100000 sorted: 4 milliseconds
+Selection Sort Size 100000 sorted: 782 milliseconds
+Bubble Sort Size 100000 sorted: 0 milliseconds
+Insertion Sort Size 100000 sorted: 0 milliseconds
+Quick Sort Size 100000 sorted: 2255 milliseconds
+Merge Sort Size 100000 sorted: 2 milliseconds
+Heap Sort Size 100000 sorted: 5 milliseconds
+Average Times:
+Selection Sort: 779 milliseconds
+Bubble Sort: 0 milliseconds
+Insertion Sort: 0 milliseconds
+Quick Sort: 2550 milliseconds
+Merge Sort: 2 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________
+100000 reverse sorted numbers experiment:
+Selection Sort Size 100000 reverse sorted: 4840 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4218 milliseconds
+Insertion Sort Size 100000 reverse sorted: 759 milliseconds
+Quick Sort Size 100000 reverse sorted: 2073 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4794 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4306 milliseconds
+Insertion Sort Size 100000 reverse sorted: 841 milliseconds
+Quick Sort Size 100000 reverse sorted: 2100 milliseconds
+Merge Sort Size 100000 reverse sorted: 2 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4856 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4184 milliseconds
+Insertion Sort Size 100000 reverse sorted: 764 milliseconds
+Quick Sort Size 100000 reverse sorted: 2114 milliseconds
+Merge Sort Size 100000 reverse sorted: 6 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Selection Sort Size 100000 reverse sorted: 4943 milliseconds
+Bubble Sort Size 100000 reverse sorted: 4217 milliseconds
+Insertion Sort Size 100000 reverse sorted: 785 milliseconds
+Quick Sort Size 100000 reverse sorted: 2147 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 5 milliseconds
+Selection Sort Size 100000 reverse sorted: 4878 milliseconds
+Bubble Sort Size 100000 reverse sorted: 5062 milliseconds
+Insertion Sort Size 100000 reverse sorted: 672 milliseconds
+Quick Sort Size 100000 reverse sorted: 1823 milliseconds
+Merge Sort Size 100000 reverse sorted: 3 milliseconds
+Heap Sort Size 100000 reverse sorted: 4 milliseconds
+Average Times:
+Selection Sort: 4862 milliseconds
+Bubble Sort: 4397 milliseconds
+Insertion Sort: 764 milliseconds
+Quick Sort: 2051 milliseconds
+Merge Sort: 3 milliseconds
+Heap Sort: 4 milliseconds
+______________________________________________________________________________

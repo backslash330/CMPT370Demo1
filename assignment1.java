@@ -8,9 +8,6 @@
 // same data
 
 //TO DO  java -Xss1000m assignment1.java
-// understand heap sort better
-// make main method. It needs to right results to a file.
-// if possible, make a graph of the results 
 
 
 //Imports
@@ -43,52 +40,63 @@ public class assignment1 {
             writer.write("Assignment 1 Experiment Results\n");
             // create a line to break the data up
             writer.write("______________________________________________________________________________\n");
-            // run tests
-            // 10000 random numbers
-            // System.out.println("running 10000 random numbers experiment...");
-            // writer.write("10000 random numbers experiment:\n");
-            // runExperiment(writer, 10000, 1, false);
-            // System.out.println("10000 random numbers experiment complete");
-            // // 10000 sorted numbers
-            // System.out.println("running 10000 sorted numbers experiment...");
-            // writer.write("10000 sorted numbers experiment:\n");
-            // runExperiment(writer, 10000, 2, false);
-            // System.out.println("10000 sorted numbers experiment complete");
-            // // 10000 reverse sorted numbers
-            // System.out.println("running 10000 reverse sorted numbers experiment...");
-            // writer.write("10000 reverse sorted numbers experiment:\n");
-            // runExperiment(writer, 10000, 3, false);
-            // System.out.println("10000 reverse sorted numbers experiment complete");
-            // // 100000 random numbers
-            // System.out.println("running 100000 random numbers experiment...");
-            // writer.write("100000 random numbers experiment:\n");
-            // runExperiment(writer, 100000, 1, false);
-            // System.out.println("100000 random numbers experiment complete");
-            // // 100000 sorted numbers
-            // System.out.println("running 100000 sorted numbers experiment...");
-            // writer.write("100000 sorted numbers experiment:\n");
-            // runExperiment(writer, 100000, 2, false);
-            // System.out.println("100000 sorted numbers experiment complete");
-            // // 100000 reverse sorted numbers
-            // System.out.println("running 100000 reverse sorted numbers experiment...");
-            // writer.write("100000 reverse sorted numbers experiment:\n");
-            // runExperiment(writer, 100000, 3, false);
-            // System.out.println("100000 reverse sorted numbers experiment complete");
-            // 1000000 random numbers
-            System.out.println("running 1000000 random numbers experiment...");
-            writer.write("1000000 random numbers experiment:\n");
-            runExperiment(writer, 1000000, 1, false);
-            System.out.println("1000000 random numbers experiment complete");
-            // 1000000 sorted numbers
-            System.out.println("running 1000000 sorted numbers experiment...");
-            writer.write("1000000 sorted numbers experiment:\n");
-            runExperiment(writer, 1000000, 2, false);
-            System.out.println("1000000 sorted numbers experiment complete");
-            // 1000000 reverse sorted numbers
-            System.out.println("running 1000000 reverse sorted numbers experiment...");
-            writer.write("1000000 reverse sorted numbers experiment:\n");
-            runExperiment(writer, 1000000, 3, false);
-            System.out.println("1000000 reverse sorted numbers experiment complete");
+            // We are going to run the following set of tests 5 tims each to create multiple data points:
+            for (int i = 0; i < 5; i++){
+                // Print a header for the test set 
+                writer.write("Test Set " + (i + 1) + ":\n");
+                System.out.println("running test set " + (i + 1) + "...");
+                // create a line to break the data up
+                writer.write("______________________________________________________________________________\n");
+                // run tests
+                // 10000 random numbers
+                System.out.println("running 10000 random numbers experiment...");
+                writer.write("10000 random numbers experiment:\n");
+                runExperiment(writer, 10000, 1, false);
+                System.out.println("10000 random numbers experiment complete");
+                // 10000 sorted numbers
+                System.out.println("running 10000 sorted numbers experiment...");
+                writer.write("10000 sorted numbers experiment:\n");
+                runExperiment(writer, 10000, 2, false);
+                System.out.println("10000 sorted numbers experiment complete");
+                // 10000 reverse sorted numbers
+                System.out.println("running 10000 reverse sorted numbers experiment...");
+                writer.write("10000 reverse sorted numbers experiment:\n");
+                runExperiment(writer, 10000, 3, false);
+                System.out.println("10000 reverse sorted numbers experiment complete");
+                // 100000 random numbers
+                System.out.println("running 100000 random numbers experiment...");
+                writer.write("100000 random numbers experiment:\n");
+                runExperiment(writer, 100000, 1, false);
+                System.out.println("100000 random numbers experiment complete");
+                // 100000 sorted numbers
+                System.out.println("running 100000 sorted numbers experiment...");
+                writer.write("100000 sorted numbers experiment:\n");
+                runExperiment(writer, 100000, 2, false);
+                System.out.println("100000 sorted numbers experiment complete");
+                // 100000 reverse sorted numbers
+                System.out.println("running 100000 reverse sorted numbers experiment...");
+                writer.write("100000 reverse sorted numbers experiment:\n");
+                runExperiment(writer, 100000, 3, false);
+                System.out.println("100000 reverse sorted numbers experiment complete");
+                // Did not run the million tests because it takes too long and I could not get the stack size to increase
+                // to allow it to run
+                // // 1000000 (1 million) random numbers
+                // System.out.println("running 1000000 random numbers experiment...");
+                // writer.write("1000000 random numbers experiment:\n");
+                // runExperiment(writer, 1000000, 1, false);
+                // System.out.println("1000000 random numbers experiment complete");
+                // // 1000000 sorted numbers
+                // System.out.println("running 1000000 sorted numbers experiment...");
+                // writer.write("1000000 sorted numbers experiment:\n");
+                // runExperiment(writer, 1000000, 2, false);
+                // System.out.println("1000000 sorted numbers experiment complete");
+                // // 1000000 reverse sorted numbers
+                // System.out.println("running 1000000 reverse sorted numbers experiment...");
+                // writer.write("1000000 reverse sorted numbers experiment:\n");
+                // runExperiment(writer, 1000000, 3, false);
+                // System.out.println("1000000 reverse sorted numbers experiment complete");
+                System.out.println("test set " + (i + 1) + " complete");
+            }
             writer.close();
         }
         catch (IOException e){
@@ -137,6 +145,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();
             selectionSort(arr);
             endTime = System.currentTimeMillis();
+            writeResults(writer, "Selection Sort",random, size,  startTime, endTime);
             selectSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Select Sort Array (Random " + size + "): " + printArray(arr));
@@ -149,6 +158,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();
             bubbleSort(arr);
             endTime = System.currentTimeMillis();
+            writeResults(writer, "Bubble Sort",random, size,  startTime, endTime);
             bubbleSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Bubble Sort Array (Random " + size + "): " + printArray(arr));
@@ -161,6 +171,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();;
             insertionSort(arr);
             endTime = System.currentTimeMillis();;
+            writeResults(writer, "Insertion Sort",random, size,  startTime, endTime);
             insertionSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Insertion Sort Array (Random " + size + "): " + printArray(arr));
@@ -173,6 +184,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();
             quickSort(arr, 0, arr.length - 1, 0);
             endTime = System.currentTimeMillis();
+            writeResults(writer, "Quick Sort",random, size,  startTime, endTime);
             quickSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Quick Sort Array (Random " + size + "): " + printArray(arr));
@@ -185,6 +197,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();
             mergeSort(arr);
             endTime = System.currentTimeMillis();
+            writeResults(writer, "Merge Sort",random, size,  startTime, endTime);
             mergeSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Merge Sort Array (Random " + size + "): " + printArray(arr));
@@ -197,6 +210,7 @@ public class assignment1 {
             startTime = System.currentTimeMillis();
             heapSort(arr);
             endTime = System.currentTimeMillis();
+            writeResults(writer, "Heap Sort",random, size,  startTime, endTime);
             heapSortAvg += (endTime - startTime);
             if(debug == true){
                 System.out.println("Sorted Heap Sort Array (Random " + size + "): " + printArray(arr));
@@ -204,6 +218,7 @@ public class assignment1 {
         }
             //Report the results
             try{
+            writer.write("Average Times:\n");
             writer.write("Selection Sort: " + selectSortAvg/5 + " milliseconds\n");
             writer.write("Bubble Sort: " + bubbleSortAvg/5 + " milliseconds\n");
             writer.write("Insertion Sort: " + insertionSortAvg/5 + " milliseconds\n");
@@ -219,6 +234,30 @@ public class assignment1 {
             }
     }
     
+    // writeResults method
+    // This method writes the results of a test to a file
+    public static void writeResults(FileWriter writer, String sort, int random, int size, long startTime, long endTime){
+        // set random string
+        String rand = "";
+        if(random == 1){
+            rand = "random";
+        }
+        else if(random == 2){
+            rand = "sorted";
+        }
+        else{
+            rand = "reverse sorted";
+        }
+            // write the results to the file before the next sort
+            try{
+                writer.write(sort + " Size " + size + " " + rand + ": " + (endTime - startTime) + " milliseconds\n");
+            } 
+            catch (IOException e){
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+    }
+
     //heap sort method
     public static int[] heapSort(int[] arr){
         // build heap
