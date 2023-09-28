@@ -19,84 +19,75 @@ import java.io.IOException;
 public class assignment1 {
 
     // Test:
-    // 10000 random numbers
-    // 10000 sorted numbers
-    // 10000 reverse sorted numbers
-    // 100000 random numbers
-    // 100000 sorted numbers
-    // 100000 reverse sorted numbers
-    // 1000000 random numbers
-    // 1000000 sorted numbers
-    // 1000000 reverse sorted numbers
-    // 5 tests of each
+
     public static void main(String[] args) {
         
         // create a file
-        File file = new File("results.txt");
+        // The AvgFile will be csv that is exported to excel
+        File file = new File("rawresults.txt");
+        File AvgRandFile = new File("AvgRandomResults.csv");
+        File AvgSortFile = new File("AvgSortedResults.csv");
+        File AvgRevFile = new File("AvgReverseResults.csv");
         // create a print writer
         try{
-            FileWriter writer = new FileWriter("results.txt");
+            FileWriter writer = new FileWriter("rawresults.txt");
+            FileWriter AvgRandWriter = new FileWriter("AvgRandomResults.csv");
+            FileWriter AvgSortWriter = new FileWriter("AvgSortedResults.csv");
+            FileWriter AvgRevWriter = new FileWriter("AvgReverseResults.csv");
             // Write a header
             writer.write("Assignment 1 Experiment Results\n");
+            AvgRandWriter.write("SelectionSort,BubbleSort,InsertionSort,QuickSort,MergeSort,HeapSort,ArraySize(n)\n");
+            AvgSortWriter.write("SelectionSort,BubbleSort,InsertionSort,QuickSort,MergeSort,HeapSort,ArraySize(n)\n");
+            AvgRevWriter.write("SelectionSort,BubbleSort,InsertionSort,QuickSort,MergeSort,HeapSort,ArraySize(n)\n");
             // create a line to break the data up
             writer.write("______________________________________________________________________________\n");
-            // We are going to run the following set of tests 5 tims each to create multiple data points:
-            for (int i = 0; i < 5; i++){
-                // Print a header for the test set 
-                writer.write("Test Set " + (i + 1) + ":\n");
-                System.out.println("running test set " + (i + 1) + "...");
-                // create a line to break the data up
+            // We are going to test each sort against each size of array from 1 to 10000
+            // We will run each test 5 times and average the results
+            for (int arraySize = 1; arraySize <= 10000; arraySize++) {
+                // Print a header for the test set
+                writer.write("Tests for array size " + arraySize + ":\n");
                 writer.write("______________________________________________________________________________\n");
                 // run tests
-                // 10000 random numbers
-                System.out.println("running 10000 random numbers experiment...");
-                writer.write("10000 random numbers experiment:\n");
-                runExperiment(writer, 10000, 1, false);
-                System.out.println("10000 random numbers experiment complete");
-                // 10000 sorted numbers
-                System.out.println("running 10000 sorted numbers experiment...");
-                writer.write("10000 sorted numbers experiment:\n");
-                runExperiment(writer, 10000, 2, false);
-                System.out.println("10000 sorted numbers experiment complete");
-                // 10000 reverse sorted numbers
-                System.out.println("running 10000 reverse sorted numbers experiment...");
-                writer.write("10000 reverse sorted numbers experiment:\n");
-                runExperiment(writer, 10000, 3, false);
-                System.out.println("10000 reverse sorted numbers experiment complete");
-                // 100000 random numbers
-                System.out.println("running 100000 random numbers experiment...");
-                writer.write("100000 random numbers experiment:\n");
-                runExperiment(writer, 100000, 1, false);
-                System.out.println("100000 random numbers experiment complete");
-                // 100000 sorted numbers
-                System.out.println("running 100000 sorted numbers experiment...");
-                writer.write("100000 sorted numbers experiment:\n");
-                runExperiment(writer, 100000, 2, false);
-                System.out.println("100000 sorted numbers experiment complete");
-                // 100000 reverse sorted numbers
-                System.out.println("running 100000 reverse sorted numbers experiment...");
-                writer.write("100000 reverse sorted numbers experiment:\n");
-                runExperiment(writer, 100000, 3, false);
-                System.out.println("100000 reverse sorted numbers experiment complete");
-                // Did not run the million tests because it takes too long and I could not get the stack size to increase
-                // to allow it to run
-                // // 1000000 (1 million) random numbers
-                // System.out.println("running 1000000 random numbers experiment...");
-                // writer.write("1000000 random numbers experiment:\n");
-                // runExperiment(writer, 1000000, 1, false);
-                // System.out.println("1000000 random numbers experiment complete");
-                // // 1000000 sorted numbers
-                // System.out.println("running 1000000 sorted numbers experiment...");
-                // writer.write("1000000 sorted numbers experiment:\n");
-                // runExperiment(writer, 1000000, 2, false);
-                // System.out.println("1000000 sorted numbers experiment complete");
-                // // 1000000 reverse sorted numbers
-                // System.out.println("running 1000000 reverse sorted numbers experiment...");
-                // writer.write("1000000 reverse sorted numbers experiment:\n");
-                // runExperiment(writer, 1000000, 3, false);
-                // System.out.println("1000000 reverse sorted numbers experiment complete");
-                System.out.println("test set " + (i + 1) + " complete");
+                // random numbers
+                 System.out.println("running random test set for array size " + arraySize + "...");
+                runExperiment(writer, AvgRandWriter, AvgSortWriter, AvgRevWriter, arraySize, 1, false);
+                System.out.println("random test set for array size " + arraySize + " complete");
+                // sorted numbers
+                System.out.println("running sorted test set for array size " + arraySize + "...");
+                runExperiment(writer, AvgRandWriter, AvgSortWriter, AvgRevWriter, arraySize, 2, false);
+                System.out.println("sorted test set for array size " + arraySize + " complete");
+                // reverse sorted numbers
+                System.out.println("running reverse sorted test set for array size " + arraySize + "...");
+                runExperiment(writer, AvgRandWriter, AvgSortWriter, AvgRevWriter, arraySize, 3, false);
+                System.out.println("reverse sorted test set for array size " + arraySize + " complete");
+                // create a line to break the data up
+                writer.write("______________________________________________________________________________\n");
+
+                // OLD TESTS
+                // // Print a header for the test set 
+                // writer.write("Test Set " + (i + 1) + ":\n");
+                // System.out.println("running test set " + (i + 1) + "...");
+                // // create a line to break the data up
+                // writer.write("______________________________________________________________________________\n");
+                // // run tests
+                //     // 10000 random numbers
+                //     System.out.println("running 10000 random numbers experiment...");
+                //     writer.write("10000 random numbers experiment:\n");
+                //     runExperiment(writer, 10000, 1, false);
+                //     System.out.println("10000 random numbers experiment complete");
+                //     // 10000 sorted numbers
+                //     System.out.println("running 10000 sorted numbers experiment...");
+                //     writer.write("10000 sorted numbers experiment:\n");
+                //     runExperiment(writer, 10000, 2, false);
+                //     System.out.println("10000 sorted numbers experiment complete");
+                //     // 10000 reverse sorted numbers
+                //     System.out.println("running 10000 reverse sorted numbers experiment...");
+                //     writer.write("10000 reverse sorted numbers experiment:\n");
+                //     runExperiment(writer, 10000, 3, false);
+                //     System.out.println("10000 reverse sorted numbers experiment complete");
+                // System.out.println("test set " + (i + 1) + " complete");
             }
+            System.out.println("All tests complete");
             writer.close();
         }
         catch (IOException e){
@@ -107,7 +98,7 @@ public class assignment1 {
 
     // runExperiment method
     // This method runs an experiment on a given array size and type
-    public static void runExperiment(FileWriter writer, int size, int random, boolean debug){
+    public static void runExperiment(FileWriter writer, FileWriter AvgRandWriter, FileWriter AvgSortWriter, FileWriter AvgRevWriter, int size, int random, boolean debug){
         // create variables to store the start and end times and average time
         long startTime = 0;
         long endTime = 0;
@@ -218,16 +209,27 @@ public class assignment1 {
         }
             //Report the results
             try{
-            writer.write("Average Times:\n");
-            writer.write("Selection Sort: " + selectSortAvg/5 + " milliseconds\n");
-            writer.write("Bubble Sort: " + bubbleSortAvg/5 + " milliseconds\n");
-            writer.write("Insertion Sort: " + insertionSortAvg/5 + " milliseconds\n");
-            writer.write("Quick Sort: " + quickSortAvg/5 + " milliseconds\n");
-            writer.write("Merge Sort: " + mergeSortAvg/5 + " milliseconds\n");
-            writer.write("Heap Sort: " + heapSortAvg/5 + " milliseconds\n");
-            // create a line to break the data up
-            writer.write("______________________________________________________________________________\n");
-            } 
+                writer.write("Average Times:\n");
+                writer.write("Selection Sort: " + selectSortAvg/5 + " milliseconds\n");
+                writer.write("Bubble Sort: " + bubbleSortAvg/5 + " milliseconds\n");
+                writer.write("Insertion Sort: " + insertionSortAvg/5 + " milliseconds\n");
+                writer.write("Quick Sort: " + quickSortAvg/5 + " milliseconds\n");
+                writer.write("Merge Sort: " + mergeSortAvg/5 + " milliseconds\n");
+                writer.write("Heap Sort: " + heapSortAvg/5 + " milliseconds\n");
+                // create a line to break the data up
+                writer.write("______________________________________________________________________________\n");
+
+                // Write to the appropriate AvgFile
+                if (random == 1){
+                    AvgRandWriter.write(selectSortAvg/5 + "," + bubbleSortAvg/5 + "," + insertionSortAvg/5 + "," + quickSortAvg/5 + "," + mergeSortAvg/5 + "," + heapSortAvg/5 + "," + size + "\n");
+                }
+                else if (random == 2){
+                    AvgSortWriter.write(selectSortAvg/5 + "," + bubbleSortAvg/5 + "," + insertionSortAvg/5 + "," + quickSortAvg/5 + "," + mergeSortAvg/5 + "," + heapSortAvg/5 + "," + size + "\n");
+                }
+                else{
+                    AvgRevWriter.write(selectSortAvg/5 + "," + bubbleSortAvg/5 + "," + insertionSortAvg/5 + "," + quickSortAvg/5 + "," + mergeSortAvg/5 + "," + heapSortAvg/5 + "," + size + "\n");
+                } 
+            }
             catch (IOException e){
                 System.out.println("An error occurred.");
                 e.printStackTrace();
