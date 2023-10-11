@@ -62,30 +62,6 @@ public class assignment1 {
                 System.out.println("reverse sorted test set for array size " + arraySize + " complete");
                 // create a line to break the data up
                 writer.write("______________________________________________________________________________\n");
-
-                // OLD TESTS
-                // // Print a header for the test set 
-                // writer.write("Test Set " + (i + 1) + ":\n");
-                // System.out.println("running test set " + (i + 1) + "...");
-                // // create a line to break the data up
-                // writer.write("______________________________________________________________________________\n");
-                // // run tests
-                //     // 10000 random numbers
-                //     System.out.println("running 10000 random numbers experiment...");
-                //     writer.write("10000 random numbers experiment:\n");
-                //     runExperiment(writer, 10000, 1, false);
-                //     System.out.println("10000 random numbers experiment complete");
-                //     // 10000 sorted numbers
-                //     System.out.println("running 10000 sorted numbers experiment...");
-                //     writer.write("10000 sorted numbers experiment:\n");
-                //     runExperiment(writer, 10000, 2, false);
-                //     System.out.println("10000 sorted numbers experiment complete");
-                //     // 10000 reverse sorted numbers
-                //     System.out.println("running 10000 reverse sorted numbers experiment...");
-                //     writer.write("10000 reverse sorted numbers experiment:\n");
-                //     runExperiment(writer, 10000, 3, false);
-                //     System.out.println("10000 reverse sorted numbers experiment complete");
-                // System.out.println("test set " + (i + 1) + " complete");
             }
             System.out.println("All tests complete");
             writer.close();
