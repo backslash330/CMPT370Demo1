@@ -23,12 +23,11 @@ def runExperiment(
     else:
         print("invalid test type, cancelling experiment")
         return
-    
+
     # Must declare due to scoping
     quickSortTime = 0
     mergeSortTime = 0
     heapSortTime = 0
-
 
     # run the tests 5 times and write all results to the four files
     for i in range(0, 5):
@@ -36,19 +35,19 @@ def runExperiment(
         startTime = time.time() * 1000
         quickSortedArray = quickSort(array, 0, arraySize - 1, 0)
         endTime = time.time() * 1000
-        quickSortTime += (endTime - startTime)
+        quickSortTime += endTime - startTime
         writeResults(rawFile, "Selection Sort", testType, arraySize, startTime, endTime)
 
         startTime = time.time() * 1000
         mergeSortedArray = mergeSort(array)
         endTime = time.time() * 1000
-        mergeSortTime += (endTime - startTime)
+        mergeSortTime += endTime - startTime
         writeResults(rawFile, "Merge Sort", testType, arraySize, startTime, endTime)
 
         startTime = time.time() * 1000
         heapSortedArray = heapSort(array)
         endTime = time.time() * 1000
-        heapSortTime += (endTime - startTime)
+        heapSortTime += endTime - startTime
         writeResults(rawFile, "Heap Sort", testType, arraySize, startTime, endTime)
 
     # write avg results
@@ -232,7 +231,7 @@ def main():
     AvgSortedFile.write("QuickSort,MergeSort,HeapSort,ArraySize(n)\n")
     AvgRevSortedFile.write("QuickSort,MergeSort,HeapSort,ArraySize(n)\n")
 
-    # Now I run each test for each array size between 1 and 10000 
+    # Now I run each test for each array size between 1 and 10000
     # Note: Python is not inclusive, therefore 1 - 10001
     # EAch test will be run 5 times and average the results.
     for arraySize in range(1, 10001):
@@ -253,7 +252,9 @@ def main():
             rawFile, AvgRandFile, AvgSortedFile, AvgRevSortedFile, arraySize, 2, False
         )
         print("sorted test set for array size " + arraySizeString + " complete")
-        print("running reverse sorted test set for array size " + arraySizeString + "...")
+        print(
+            "running reverse sorted test set for array size " + arraySizeString + "..."
+        )
         runExperiment(
             rawFile, AvgRandFile, AvgSortedFile, AvgRevSortedFile, arraySize, 3, False
         )
