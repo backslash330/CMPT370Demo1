@@ -1,9 +1,12 @@
-// Tell me where the tail of the tree is.
-
+// When a new leaf node is created list all 
+// the nodes in the path from the newly added leaf node to the root of the tree. It is sufficient to 
+// list only the value the node holds since duplication is not permitted. When listing each node 
+// also print the next two children in the path from the root to the newly added leaf node.
 public class demo4 {
     
     public static class Node {
         int data;
+        int height;
         Node left, right, parent;
 
         public Node(int data) {
@@ -14,12 +17,17 @@ public class demo4 {
 
     public static void main(String[] args) {
         // Generate numbers
-        System.out.println("Generating 5 numbers...");
-        int[] numbers = generateNumbers(5);
+        // System.out.println("Generating 5 numbers...");
+        // int[] numbers = generateNumbers(5);
+
+        // Use specific array
+        //14, 35, 2, 3, 39,  27, 37
+        int[] numbers = {14, 35, 2, 3, 39, 27, 37};
+
         // print numbers to confirm
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
-        }
+        // for (int i = 0; i < numbers.length; i++) {
+        //     System.out.println(numbers[i]);
+        // }
 
         // Create tree
         System.out.println("=== BSP Tree ===");
@@ -55,6 +63,9 @@ public class demo4 {
                         if (current.left == null) {
                             current.left = new Node(numbers[i]);
                             current.left.parent = current;
+                            // we have created a new leaf node
+                            // so we print the path
+                            printPath(current.left);
                             break;
                         } else {
                             current = current.left;
@@ -63,6 +74,9 @@ public class demo4 {
                         if (current.right == null) {
                             current.right = new Node(numbers[i]);
                             current.right.parent = current;
+                            // we have created a new leaf node
+                            // so we print the path
+                            printPath(current.right);
                             break;
                         } else {
                             current = current.right;
@@ -78,6 +92,37 @@ public class demo4 {
 
     }
 
+    // When a new leaf node is created list all 
+    // the nodes in the path from the newly added leaf node to the root of the tree. It is sufficient to 
+    // list only the value the node holds since duplication is not permitted. When listing each node 
+    // also print the next two children in the path from the root to the newly added leaf node.
+    public static void printPath(Node node) {
+        // print the nodes until the parent is null
+        System.out.println("Path: ");
+        boolean rootFound = false;
+        while (!rootFound) {
+            if (node.parent == null) {
+                rootFound = true;
+            }
+            String left = "";
+            String right = "";
+            if (node.left != null) {
+                left = String.valueOf(node.left.data);
+            }
+            else {
+                left = "null";
+            }
+            if (node.right != null) {
+                right = String.valueOf(node.right.data);
+            }
+            else {
+                right = "null";
+            }
+            System.out.println(node.data + "->" + left + "->" + right);
+            node = node.parent;
+        }
+    }
+    
     // When you print out your tree via an in-order traversal include the stored
     // integer, the depth of the
     // node, and an indication of the left and right subtrees (just the values in
