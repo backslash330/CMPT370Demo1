@@ -6,6 +6,7 @@
 # imports
 import random
 import time
+import sys
 
 
 def runExperiment(
@@ -28,63 +29,65 @@ def runExperiment(
     quickSortTime = 0
     mergeSortTime = 0
     heapSortTime = 0
-
     # run the tests 5 times and write all results to the four files
-    for i in range(0, 5):
+    for i in range(0, 3):
         # time needs to be in milliseconds
-        startTime = time.time() * 1000
-        quickSortedArray = quickSort(array, 0, arraySize - 1, 0)
-        endTime = time.time() * 1000
+        arrayCopy = array.copy()
+        startTime = round(time.time() * 1000)
+        quickSortedArray = quickSort(arrayCopy, 0, arraySize - 1)
+        endTime = round(time.time() * 1000)
         quickSortTime += endTime - startTime
         writeResults(rawFile, "Selection Sort", testType, arraySize, startTime, endTime)
 
-        startTime = time.time() * 1000
-        mergeSortedArray = mergeSort(array)
-        endTime = time.time() * 1000
+        arrayCopy = array.copy()
+        startTime = round(time.time() * 1000)
+        mergeSortedArray = mergeSort(arrayCopy)
+        endTime = round(time.time() * 1000)
         mergeSortTime += endTime - startTime
         writeResults(rawFile, "Merge Sort", testType, arraySize, startTime, endTime)
 
-        startTime = time.time() * 1000
-        heapSortedArray = heapSort(array)
-        endTime = time.time() * 1000
+        arrayCopy = array.copy()
+        startTime = round(time.time() * 1000)
+        heapSortedArray = heapSort(arrayCopy)
+        endTime = round(time.time() * 1000)
         heapSortTime += endTime - startTime
         writeResults(rawFile, "Heap Sort", testType, arraySize, startTime, endTime)
 
     # write avg results
     rawFile.write("\nAverage Times:\n")
-    rawFile.write("Quick Sort: " + str(quickSortTime / 5) + " milliseconds\n")
-    rawFile.write("Merge Sort: " + str(mergeSortTime / 5) + " milliseconds\n")
-    rawFile.write("Heap Sort: " + str(heapSortTime / 5) + " milliseconds\n\n")
+    rawFile.write("Quick Sort: " + str(round(quickSortTime / 5)) + " milliseconds\n")
+    rawFile.write("Merge Sort: " + str(round(mergeSortTime / 5)) + " milliseconds\n")
+    rawFile.write("Heap Sort: " + str(round(heapSortTime / 5)) + " milliseconds\n\n")
 
     if testType == 1:
         AvgRandFile.write(
-            str(quickSortTime / 5)
+            str(round(quickSortTime / 5))
             + ","
-            + str(mergeSortTime / 5)
+            + str(round(mergeSortTime / 5))
             + ","
-            + str(heapSortTime / 5)
+            + str(round(heapSortTime / 5))
             + ","
             + str(arraySize)
             + "\n"
         )
     elif testType == 2:
         AvgSortedFile.write(
-            str(quickSortTime / 5)
+            str(round(quickSortTime / 5))
             + ","
-            + str(mergeSortTime / 5)
+            + str(round(mergeSortTime / 5))
             + ","
-            + str(heapSortTime / 5)
+            + str(round(heapSortTime / 5))
             + ","
             + str(arraySize)
             + "\n"
         )
     elif testType == 3:
         AvgRevSortedFile.write(
-            str(quickSortTime / 5)
+            str(round(quickSortTime / 5))
             + ","
-            + str(mergeSortTime / 5)
+            + str(round(mergeSortTime / 5))
             + ","
-            + str(heapSortTime / 5)
+            + str(round(heapSortTime / 5))
             + ","
             + str(arraySize)
             + "\n"
@@ -116,12 +119,11 @@ def writeResults(rawFile, sortType, testType, arraySize, startTime, endTime):
     )
 
 
-def quickSort(array, left, right, sortLevel):
+def quickSort(array, left, right):
     if left < right:
         pivot = partition(array, left, right)
-        leftArray = quickSort(array, left, pivot - 1, sortLevel + 1)
-        rightArray = quickSort(array, pivot + 1, right, sortLevel + 1)
-    return array
+        quickSort(array, left, pivot - 1)
+        quickSort(array, pivot + 1, right)
 
 
 # note: removed swap from java version because of python passes by assignment
@@ -216,6 +218,8 @@ def heapify(array, size, i):
 
 
 def main():
+    #Recursion limit must be overridden or program will fail on random sort of size 997 quicksort
+    sys.setrecursionlimit(100000)
     # Create the files
     rawFile = open("rawresults.txt", "w")
     AvgRandFile = open("AvgRandomResults.csv", "w")
@@ -262,6 +266,12 @@ def main():
         rawFile.write(
             "______________________________________________________________________________\n"
         )
+    
+    # close the files
+    rawFile.close()
+    AvgRandFile.close()
+    AvgSortedFile.close()
+    AvgRevSortedFile.close()
 
 
 if __name__ == "__main__":
