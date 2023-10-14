@@ -8,7 +8,7 @@ import random
 import time
 import sys
 
-
+# Runs the experiment, in groups of 3
 def runExperiment(
     rawFile, AvgRandFile, AvgSortedFile, AvgRevSortedFile, arraySize, testType, debug
 ):
@@ -29,7 +29,7 @@ def runExperiment(
     quickSortTime = 0
     mergeSortTime = 0
     heapSortTime = 0
-    # run the tests 5 times and write all results to the four files
+    # run the tests 3 times and write all results to the four files
     for i in range(0, 3):
         # time needs to be in milliseconds
         arrayCopy = array.copy()
@@ -96,7 +96,7 @@ def runExperiment(
         print("invalid test type, cancelling experiment")
         return
 
-
+# writes the results to the raw file.
 def writeResults(rawFile, sortType, testType, arraySize, startTime, endTime):
     if testType == 1:
         type = "Random"
@@ -142,7 +142,7 @@ def partition(array, left, right):
     array[right] = temp
     return i + 1
 
-
+#  Merge sort function, uses merge as a subfunction
 def mergeSort(array):
     if len(array) <= 1:
         return array
@@ -158,7 +158,7 @@ def mergeSort(array):
     # merge the arrays
     return merge(left, right, array)
 
-
+# merges the individual arrays
 def merge(left, right, array):
     i = 0
     j = 0
@@ -181,7 +181,7 @@ def merge(left, right, array):
         k = k + 1
     return array
 
-
+# heap sort function, uses heapify as a subfunction
 def heapSort(array):
     # build the heap
     for i in range(len(array) // 2 - 1, -1, -1):
@@ -195,7 +195,7 @@ def heapSort(array):
         heapify(array, i, 0)
     return array
 
-
+# turns an array into a max heap
 def heapify(array, size, i):
     largest = i
     left = 2 * i + 1
