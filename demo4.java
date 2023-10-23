@@ -3,7 +3,7 @@
 // list only the value the node holds since duplication is not permitted. When listing each node 
 // also print the next two children in the path from the root to the newly added leaf node.
 public class demo4 {
-    
+
     public static class Node {
         int data;
         int height;
@@ -21,20 +21,16 @@ public class demo4 {
         // int[] numbers = generateNumbers(5);
 
         // Use specific array
-        //14, 35, 2, 3, 39,  27, 37
-        int[] numbers = {14, 35, 2, 3, 39, 27, 37};
+        int[] numbers = { 14, 35, 2, 3, 39, 27, 37 };
 
         // print numbers to confirm
         // for (int i = 0; i < numbers.length; i++) {
-        //     System.out.println(numbers[i]);
+        // System.out.println(numbers[i]);
         // }
 
         // Create tree
         System.out.println("=== BSP Tree ===");
         Node root = createBST(numbers);
-
-        //TEST: Find tail of tree
-        Node tail = root;
 
         // Print Tree
         inOrderTraversal(root, 1);
@@ -89,40 +85,45 @@ public class demo4 {
         }
         return root;
 
-
     }
 
-    // When a new leaf node is created list all 
-    // the nodes in the path from the newly added leaf node to the root of the tree. It is sufficient to 
-    // list only the value the node holds since duplication is not permitted. When listing each node 
-    // also print the next two children in the path from the root to the newly added leaf node.
+    // When a new leaf node is created list all
+    // the nodes in the path from the newly added leaf node to the root of the tree.
+    // It is sufficient to
+    // list only the value the node holds since duplication is not permitted. When
+    // listing each node
+    // also print the next two children in the path from the root to the newly added
+    // leaf node.
     public static void printPath(Node node) {
         // print the nodes until the parent is null
+        Node prev1 = null;
+        Node prev2 = null;
         System.out.println("Path: ");
         boolean rootFound = false;
         while (!rootFound) {
             if (node.parent == null) {
                 rootFound = true;
             }
-            String left = "";
-            String right = "";
-            if (node.left != null) {
-                left = String.valueOf(node.left.data);
+            String prev1String = "";
+            String prev2String = "";
+            if (prev1 != null) {
+                prev1String = String.valueOf(prev1.data);
+            } else {
+                prev1String = "null";
             }
-            else {
-                left = "null";
+            if (prev2 != null) {
+                prev2String = String.valueOf(prev2.data);
+            } else {
+                prev2String = "null";
             }
-            if (node.right != null) {
-                right = String.valueOf(node.right.data);
-            }
-            else {
-                right = "null";
-            }
-            System.out.println(node.data + "->" + left + "->" + right);
+            System.out.println(node.data + "->" + prev1String + "->" + prev2String);
+            // Set previous nodes
+            prev2 = prev1;
+            prev1 = node;
             node = node.parent;
         }
     }
-    
+
     // When you print out your tree via an in-order traversal include the stored
     // integer, the depth of the
     // node, and an indication of the left and right subtrees (just the values in

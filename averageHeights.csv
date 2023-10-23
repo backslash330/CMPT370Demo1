@@ -1,0 +1,3 @@
+Number of Nodes,AVL Height (Random), BST Height (Random), AVL Height (Sorted), BST Height (Sorted), AVL Height (Reverse Sorted), BST Height (Reverse Sorted)
+9999,15,31,13,7839,13,7883
+10000,15,29,13,7878,13,7870
